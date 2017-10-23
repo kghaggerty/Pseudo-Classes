@@ -15,9 +15,8 @@ span {
 
 }
 
-ul li:after {
-    display: inline;
-    content: " ,";
+.block:not(:last-of-type):after {
+    content: ", ";
 
 }
 
@@ -43,6 +42,10 @@ ul li:after {
 .three section:last-child {
     background-color: darkslategray;
 
+}
+
+article:before {
+    content: "Article Parent Element";
 }
 
 article {
